@@ -18,12 +18,12 @@ public class ShowURL {
     
     public static void main(String [] args)
     {
-        long delay = 1;
+        long delay = 30;
         long timeout = 10;
-        int limitedDepth = 2;
+        int limitedDepth = 3;
         
         Set<String> seed = new HashSet<String>();
-        seed.add("http://www.lemonde.fr/");
+        seed.add("http://www.jeuxvideo.com/");
         
         
         /* CHANGE IT with : 
@@ -32,9 +32,8 @@ public class ShowURL {
          * DFS
          * DFS_MT
          * */
-        String selected_mode = BFS;
+        String selected_mode = BFS_MT;
         
-     
         switch (selected_mode)
         {
           // I. Implementing a simple BFS crawler
@@ -55,7 +54,7 @@ public class ShowURL {
               break;
         } 
         System.out.println("END");
-        
+
     }
 
 }

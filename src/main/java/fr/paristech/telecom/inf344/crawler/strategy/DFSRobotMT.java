@@ -23,9 +23,9 @@ public class DFSRobotMT extends MultiThreadedRobot {
                 Integer url2Depth = urlsDepths.get(url2);
                 
                 if (url1Depth < url2Depth){
-                    return 1;
-                } else {
                     return -1;
+                } else {
+                    return 1;
                 }
             }
         };

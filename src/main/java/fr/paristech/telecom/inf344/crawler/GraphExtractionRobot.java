@@ -1,5 +1,6 @@
 package fr.paristech.telecom.inf344.crawler;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,6 +32,7 @@ public class GraphExtractionRobot extends DFSRobot {
     public GraphExtractionRobot(String ua, long delay) {
         super(ua, delay);
 
+        vv.setBackground(new Color(255,255,255));
         layout.setSize(new Dimension(1200, 900));
         frame.getContentPane().add(vv);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

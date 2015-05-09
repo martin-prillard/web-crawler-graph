@@ -26,9 +26,9 @@ public abstract class BFSRobot extends SingleThreadedRobot {
                 Integer url2Depth = urlsDepths.get(url2);
                 
                 if (url1Depth < url2Depth){
-                    return -1;
-                } else {
                     return 1;
+                } else {
+                    return -1;
                 }
             }
         };
@@ -45,9 +45,7 @@ public abstract class BFSRobot extends SingleThreadedRobot {
         if (s != null && urlsDepths.get(url) <= limitedDepth) {
             for(String ss:s){
                 if (!done.contains(ss)){
-                    if (!urlsDepths.containsKey(ss)) {
-                        urlsDepths.put(ss, urlsDepths.get(url)+1);
-                    }
+                    urlsDepths.put(ss, urlsDepths.get(url)+1);
                     candidates.add(ss);
                 }
             }
