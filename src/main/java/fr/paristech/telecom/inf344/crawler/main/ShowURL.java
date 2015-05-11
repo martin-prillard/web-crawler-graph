@@ -20,7 +20,7 @@ public class ShowURL {
     {
         long delay = 30;
         long timeout = 10;
-        int limitedDepth = 3;
+        int limitedDepth = 4;
         
         Set<String> seed = new HashSet<String>();
         seed.add("http://www.jeuxvideo.com/");
